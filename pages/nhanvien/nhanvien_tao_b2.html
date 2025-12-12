@@ -1,0 +1,1987 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="nhanvien_tao_b1.html">
+      
+      
+        <link rel="next" href="../system/index.html">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>B2: Phần quyền Tính năng & Truy cập - Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--bstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/childpages_card_grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-mkdocs.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tao-moi-nhan-vien" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev" class="md-header__button md-logo" aria-label="Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              B2: Phần quyền Tính năng & Truy cập
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/viethdd/tutorial/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev" class="md-nav__button md-logo" aria-label="Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Danh Mục Các Hướng Dẫn Sử Dụng Phần Mềm TekaDev
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/viethdd/tutorial/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../thongtinbds/index.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/></svg>
+  
+  <span class="md-ellipsis">
+    Quản lý Thông tin
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Quản lý Thông tin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thongtinbds/info_input.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Điền thông tin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thongtinbds/fav_folder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Thư mục Cá nhân
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thongtinbds/filter_usage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bộ lọc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thongtinbds/quicklook.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Xem nhanh thông tin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../bando/index.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 19-6-2.11V5l6 2.11M20.5 3h-.16L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5c.05 0 .11 0 .16-.03L9 18.9l6 2.1 5.64-1.9c.21-.1.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5"/></svg>
+  
+  <span class="md-ellipsis">
+    Bản đồ quy hoạch
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Bản đồ quy hoạch
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bando/ban-do-quy-hoach-tekamap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bản đồ Quy hoạch Tekamap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 14c-2.67 0-8 1.33-8 4v2h16v-2c0-2.67-5.33-4-8-4m-9-4V7H4v3H1v2h3v3h2v-3h3v-2m6 2a4 4 0 0 0 4-4 4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4"/></svg>
+  
+  <span class="md-ellipsis">
+    Quản lý nhân sự
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Quản lý nhân sự
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gioi-thieu-biopage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giới thiệu BioPage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nhanvien_tao_b1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tạo nhân viên bước 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tạo nhân viên bước 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="nhanvien_tao_b2.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tạo nhân viên bước 2
+    
+  </span>
+  
+
+      </a>
+      
+        <!-- Table of contents --> 
+ <nav class="md-nav md-nav--secondary" aria-label=""> 
+    
+   <!-- Check whether the content starts with a level 1 headline.
+     If it does, the top-level anchor must be skipped, 
+     since it would be redundant to the link to the current page that 
+     is located just above the anchor. Therefore we directly continue 
+     with the children of the anchor. --> 
+      
+      
+     <!-- Table of contents title and list --> 
+      
+      <div class="md-nav__toc">
+         <label class="md-nav__title" for="__toc"> 
+            <h3 class="md-nav__icon md-icon" style="color:red !important;"></h3> 
+            <!--  --> Trên trang này sẽ hướng dẫn: 
+         </label> 
+         <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix> 
+             
+               <li class="md-nav__item">
+  <a href="#tao-moi-nhan-vien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo Mới Nhân Viên
+    </span>
+  </a>
+  
+</li> 
+             
+               <li class="md-nav__item">
+  <a href="#buoc-2-phan-quyen-tinh-nang-va-truy-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bước 2: Phân Quyền Tính năng và Truy cập
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bước 2: Phân Quyền Tính năng và Truy cập">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-thiet-lap-chung" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Thiết lập chung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Thiết lập chung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-nhom-phan-quyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Nhóm Phân quyền
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-tai-khoan-ang-nhap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Tài khoản đăng nhập
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-thiet-lap-bao-mat" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Thiết lập bảo mật
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-thao-tac-phan-quyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Thao tác Phân quyền
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Thao tác Phân quyền">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-tai-san" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Tài sản
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-hoat-ong" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Hoạt Động
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-nhan-su" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Nhân Sự
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-tuyen-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.4 Tuyển Dụng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-he-thong" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Hệ thống
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-an-dashboard-thong-ke" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Ẩn Dashboard thống kê
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Ẩn Dashboard thống kê">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cach-thao-tac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cách thao tác
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-quan-ly-nhan-vien-chi-nhanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Quản lý nhân viên chi nhánh
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-xem-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Xem Dữ liệu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Xem Dữ liệu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-gioi-han-ngay-thang" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.1 Giới hạn ngày tháng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-loai-giao-dich-uoc-xem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.2 Loại giao dịch được xem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-gioi-han-luot-xem-moi-ngay" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.3 Giới hạn lượt xem mỗi ngày
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#274-gioi-han-phan-khuc-gia" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.4 Giới hạn Phân khúc giá
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#275-tatmo-xem-hinhlich-suso-ien-thoai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.5 Tắt/Mở Xem hình/Lịch Sử/Số Điện Thoại
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#276-quan-huyen-trang-thai-bs-khong-uoc-xem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.6 Quận Huyện &amp; Trạng thái BĐS Không được xem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-buoc-tiep-theo-e-hoan-tat-qua-trinh-tao-nhan-vien" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Bước tiếp theo để hoàn tất quá trình tạo Nhân viên
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li> 
+             </ul> 
+      </div>   
+       
+         <!-- <div class="divider"></div>  -->
+      <div class="sidebar_faq" markdown> 
+         <div class="sidebar_faq_inner"> 
+            <h4>Câu hỏi thường gặp</h4>
+            <div>
+               <p class="quest">• <a href="/pages/nhanvien/">Cách tạo mới nhân viên?</a></p>
+               <p class="quest">• <a href="pages/faq/thongtinbds">Cách nhập thông tin BĐS?</a></p>
+               <p class="quest">• <a href="/pages/faq/bando/">Định vị bản đồ TekaMap?</a></p>
+               <p class="quest">• <a href="/pages/faq/google_map/google_map_cordinate.html">Lấy toạ độ trên Google Map?</a></p>
+         </div>
+      </div> 
+   </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nhanvien_tao_3.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tạo nhân viên bước 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system/index.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg>
+  
+  <span class="md-ellipsis">
+    Quản lý hệ thống - Coming Soon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hoatdong/index.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83s-2.05.78-2.83 0m-5.66 7.07-1.41-1.41zM6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22zM2 22h1.41l4.77-4.76-1.42-1.41L2 20.59zm0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76z"/></svg>
+  
+  <span class="md-ellipsis">
+    Quản lý Hoạt động (Coming Soon)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/index.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 19h3v3h-3zm2-17c5.35.22 7.68 5.62 4.5 9.67-.83 1-2.17 1.66-2.83 2.5C13 15 13 16 13 17h-3c0-1.67 0-3.08.67-4.08.66-1 2-1.59 2.83-2.25C15.92 8.43 15.32 5.26 12 5a3 3 0 0 0-3 3H6a6 6 0 0 1 6-6"/></svg>
+  
+  <span class="md-ellipsis">
+    FAQ (Coming Soon)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Table of contents --> 
+ <nav class="md-nav md-nav--secondary" aria-label=""> 
+    
+   <!-- Check whether the content starts with a level 1 headline.
+     If it does, the top-level anchor must be skipped, 
+     since it would be redundant to the link to the current page that 
+     is located just above the anchor. Therefore we directly continue 
+     with the children of the anchor. --> 
+      
+      
+     <!-- Table of contents title and list --> 
+      
+      <div class="md-nav__toc">
+         <label class="md-nav__title" for="__toc"> 
+            <h3 class="md-nav__icon md-icon" style="color:red !important;"></h3> 
+            <!--  --> Trên trang này sẽ hướng dẫn: 
+         </label> 
+         <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix> 
+             
+               <li class="md-nav__item">
+  <a href="#tao-moi-nhan-vien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo Mới Nhân Viên
+    </span>
+  </a>
+  
+</li> 
+             
+               <li class="md-nav__item">
+  <a href="#buoc-2-phan-quyen-tinh-nang-va-truy-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bước 2: Phân Quyền Tính năng và Truy cập
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bước 2: Phân Quyền Tính năng và Truy cập">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-thiet-lap-chung" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Thiết lập chung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Thiết lập chung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-nhom-phan-quyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Nhóm Phân quyền
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-tai-khoan-ang-nhap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Tài khoản đăng nhập
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-thiet-lap-bao-mat" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Thiết lập bảo mật
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-thao-tac-phan-quyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Thao tác Phân quyền
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Thao tác Phân quyền">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-tai-san" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Tài sản
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-hoat-ong" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Hoạt Động
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-nhan-su" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Nhân Sự
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-tuyen-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.4 Tuyển Dụng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-he-thong" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Hệ thống
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-an-dashboard-thong-ke" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Ẩn Dashboard thống kê
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Ẩn Dashboard thống kê">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cach-thao-tac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cách thao tác
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-quan-ly-nhan-vien-chi-nhanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Quản lý nhân viên chi nhánh
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-xem-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Xem Dữ liệu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Xem Dữ liệu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-gioi-han-ngay-thang" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.1 Giới hạn ngày tháng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-loai-giao-dich-uoc-xem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.2 Loại giao dịch được xem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-gioi-han-luot-xem-moi-ngay" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.3 Giới hạn lượt xem mỗi ngày
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#274-gioi-han-phan-khuc-gia" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.4 Giới hạn Phân khúc giá
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#275-tatmo-xem-hinhlich-suso-ien-thoai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.5 Tắt/Mở Xem hình/Lịch Sử/Số Điện Thoại
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#276-quan-huyen-trang-thai-bs-khong-uoc-xem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.6 Quận Huyện &amp; Trạng thái BĐS Không được xem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-buoc-tiep-theo-e-hoan-tat-qua-trinh-tao-nhan-vien" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Bước tiếp theo để hoàn tất quá trình tạo Nhân viên
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li> 
+             </ul> 
+      </div>   
+       
+         <!-- <div class="divider"></div>  -->
+      <div class="sidebar_faq" markdown> 
+         <div class="sidebar_faq_inner"> 
+            <h4>Câu hỏi thường gặp</h4>
+            <div>
+               <p class="quest">• <a href="/pages/nhanvien/">Cách tạo mới nhân viên?</a></p>
+               <p class="quest">• <a href="pages/faq/thongtinbds">Cách nhập thông tin BĐS?</a></p>
+               <p class="quest">• <a href="/pages/faq/bando/">Định vị bản đồ TekaMap?</a></p>
+               <p class="quest">• <a href="/pages/faq/google_map/google_map_cordinate.html">Lấy toạ độ trên Google Map?</a></p>
+         </div>
+      </div> 
+   </nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h3 id="tao-moi-nhan-vien">Tạo Mới Nhân Viên</h3>
+<h1 id="buoc-2-phan-quyen-tinh-nang-va-truy-cap"><strong>Bước 2: Phân Quyền Tính năng và Truy cập</strong></h1>
+<hr />
+<p>Tính năng tạo mới nhân viên sẽ bao gồm:
+<div class="highlight"><pre><span></span><code>1. Nhập thông tin nhân viên
+   1.1 Thông tin chung
+   1.2 Thông tin liên hệ
+   1.3 Vị trí Chức vụ
+   1.4 Upload hình
+
+2. Phân quyền tính năng/truy cập (Bạn đang ở bước này)
+   2.1 Thiết lập Bảo mật (chung)
+   2.2 Quản lý nhân viên chi nhánh
+   2.3 Thiết lập bảo mật
+   2.4 Thao tác Phân quyền
+   2.5 Ẩn Dashboard thống kê
+   2.6 Quản lý nhân viên chi nhánh
+   2.7 Các tính năng truy cập xem dữ liệu (quan trọng)
+
+3. Kích hoạt tài khoản nhân viên
+</code></pre></div></p>
+<details class="note">
+<summary>Định nghĩa từ thường dùng: Tab</summary>
+<p>Trên trang tạo Nhân viên mới này, sẽ có 2 <b>Tab</b>, hoặc có thể gọi là <b>Thẻ</b>.
+  <p><strong>Mục đích:</strong> 
+  Dùng để phân loại thông tin và cắt nhỏ số thông tin cần phải nhớ, đỡ bị rối.</p>
+</details>
+<details class="note">
+<summary>Định nghĩa từ thường dùng: Trường</summary>
+<p>Trong ngữ cảnh nhập thông tin, <strong>Trường</strong> là tên gọi các ô nhập dữ liệu bằng chữ hoặc số.</p>
+</details>
+<details class="note">
+<summary>Định nghĩa từ thường dùng: Nút Switch</summary>
+<p>Trong ngữ cảnh nhập thông tin, <strong>Nút Switch</strong> là tên gọi nút tắt/mở 1 chức năng nào đó trên form điền hoặc phần mềm.</p>
+</details>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_switchbtn.png" data-type="image" data-width="100%" data-height="auto" data-title="Nút Switch" data-desc-position="bottom"><img alt="Nút Switch" src="../../assets/images/modules/nhanvien/nhanvien_tab2_switchbtn.png" /></a></p>
+<hr />
+<p>🚀 <strong>BẮT ĐẦU NHÉ</strong></p>
+<p>Trên <code>Tab Phân Quyền</code> này, chúng ta sẽ bắt đầu bằng với:</p>
+<h2 id="2-thiet-lap-chung">2. Thiết lập chung</h2>
+<h3 id="21-nhom-phan-quyen">2.1 Nhóm Phân quyền</h3>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2.png" data-type="image" data-width="100%" data-height="auto" data-title="Các trường nhập thông tin định danh nhân viên" data-desc-position="bottom"><img alt="Các trường nhập thông tin định danh nhân viên" src="../../assets/images/modules/nhanvien/nhanvien_tab2.png" /></a></p>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Nhóm Phân Quyền</p>
+<p>Các nhóm phân quyền dưới đây đã được thiết lập sẵn để truy cập và hoạt động theo đúng chức năng của mỗi đối tượng. Tuy nhiên, Quý khách có thể chỉnh sửa các quyền truy cập trực tiếp trên trang phân quyền này theo đúng tiêu chí và định hướng của công ty của Quý khách.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Admin Tổng</strong></td>
+<td>Có quyền cao nhất về: truy cập, import/export, nhân sự, tất cả các quyền khác. Và loại Admin này không thể xoá. Các nhóm phân quyền thấp hơn sẽ bị xoá hoặc thao tác bởi cấp quyền cao nhất này.</td>
+</tr>
+<tr>
+<td><strong>Chuyên viên Tư vấn</strong></td>
+<td>mô tả</td>
+</tr>
+<tr>
+<td><strong>Admin</strong></td>
+<td>mô tả</td>
+</tr>
+<tr>
+<td><strong>Hành Chính - Nhân sự</strong></td>
+<td>Được quyền tạo mới, cập nhật thông tin nhân sự, thông báo thông tin, văn bản nội bộ công ty.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Trường bắt buộc điền</p>
+<p>Tuỳ vào chính sách công ty thì một số trường nào đó sẽ phải bắt buộc điền, 
+  Một số trường theo mặc định của phần mềm sẽ không bắt buộc điền. 
+  <b>Tuy nhiên, nếu quý khách muốn thiết lập bắt buộc cho trường nào đó, vui lòng liên hệ với bộ phận <em>Chăm sóc khách hàng</em> để được cập nhật sớm nhất.</p>
+</div>
+<h3 id="22-tai-khoan-ang-nhap">2.2 Tài khoản đăng nhập</h3>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Mặc Định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cho phép đăng nhập</strong></td>
+<td>Cấp phép cho nhân viên đăng nhập phần mềm</td>
+<td>Mở cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Cấp tài khoản đăng nhập</strong></td>
+<td>Hệ thống tự động gửi thông tin và link kích hoạt tới email đã nhập ở <strong>tab: Thông Tin</strong></td>
+<td>Mở cho tất cả nhóm phân quyền</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-thiet-lap-bao-mat">2.3 Thiết lập bảo mật</h3>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Mặc Định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Xác minh dữ liệu BĐS</strong></td>
+<td>Cấp phép cho nhân viên đăng nhập phần mềm</td>
+<td>Tắt cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Tạo tệp dữ liệu BĐS Công ty</strong></td>
+<td>Lưu nhóm bất động sản theo nhóm: Cá nhân, Công ty và Group</td>
+<td>Tắt cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Cập nhật văn bản nội bộ</strong></td>
+<td>Cho quyền đăng thông tin văn bản nội bộ thuộc chi nhánh đang quản lý.</td>
+<td>Tắt cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Hạn chế IP Truy cập</strong></td>
+<td>Giới hạn truy cập chỉ với địa chỉ IP đã thiết lập</td>
+<td>Mở cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Hạn chế vị trí truy cập</strong></td>
+<td>Giới hạn truy cập bằng định vị của thiết bị của nhân viên, trong bán kính trong vòng 200m.</td>
+<td>Mở cho tất cả nhóm phân quyền</td>
+</tr>
+<tr>
+<td><strong>Người dùng ẩn danh</strong></td>
+<td>Các thao tác và hoạt động trên phần mềm sẽ ẩn thông tin người truy cập và các nhật ký tương tác.</td>
+<td>Tắt cho tất cả nhóm phân quyền</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Bật/Tắt bằng nút Switch</p>
+<p>Bấm vào nút Switch của mỗi mục để thay đổi trạng thái tương ứng.
+  <br>Ví dụ: Xác minh dữ liệu đang ở trạng thái mặc định Tắt, đang có màu xám, đồng nghĩa với việc đang <strong>Không cho phép Xác minh dữ liệu BĐS</strong>. Bấm vào nút Switch để chuyển thành trạng thái thành Mở, nút chuyển màu đỏ hoặc xanh lá, đồng nghĩa với việc <strong>Đang cho phép xác minh dữ liệu BĐS</strong>.
+  <br> Tương tự với các thiết lập khác cũng thao tác như vậy.
+  <br> Sau khi đã bật/tắt để thiết lập các nút này, bấm nút Lưu ở trên góc phải trang để Lưu/Cập nhật thông tin Nhân viên.</p>
+</div>
+<h3 id="24-thao-tac-phan-quyen">2.4 Thao tác Phân quyền</h3>
+<h4 id="241-tai-san">2.4.1 Tài sản</h4>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Gồm các quyền</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thông tin BĐS</strong></td>
+<td>Quản lý cập nhật, tạo mới, xoá, xem hàng BĐS từ bộ lọc, dữ liệu nhập mới, phường xã mới, số nhà, kiểm tra trung, tính hoa hồng, ghi lịch sử hoạt động của nhân viên, cập nhật pháp lý sổ hồng, hình ảnh, số điện thoại, giá bán và thuê, ghi chú, ưu điểm, thẻ thông tin nổi bật, trạng thái giao dịch, cập nhật,...<br><em>Quyền Xuất hoặc Nhập file thuộc về Admin tổng.</em> <br><a href="coming_soon.md">Xem cách quản lý Thông tin BĐS</a></td>
+<td>Xem Tạo Sửa Xoá Xuất Nhập</td>
+</tr>
+<tr>
+<td><strong>Tệp giỏ hàng</strong></td>
+<td>mô tả</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Bản đồ quy hoạch</strong></td>
+<td>mô tả</td>
+<td>Xem</td>
+</tr>
+<tr>
+<td><strong>Khoá thông tin</strong></td>
+<td>mô tả</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Danh bạ môi giới</strong></td>
+<td>mô tả</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>ID Khách hàng</strong></td>
+<td>mô tả</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Bio page</strong></td>
+<td>mô tả</td>
+<td>Xem Sửa</td>
+</tr>
+</tbody>
+</table>
+<h4 id="242-hoat-ong">2.4.2 Hoạt Động</h4>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Gồm các quyền</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chat nội bộ</strong></td>
+<td>Tính năng chat nội bộ trong công ty, để bảo mật thông tin hơn.</td>
+<td>Xem Tạo Sửa Xoá Xuất Nhập</td>
+</tr>
+<tr>
+<td><strong>Tin nội bộ</strong></td>
+<td>Cập nhật các tin mới nhất từ <strong>Ban giám đốc</strong> hoặc <strong>Hành chính Nhân sự</strong> <br><a href="coming_soon.md">Xem cách đăng tin nội bộ</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Công việc</strong></td>
+<td>Ghi chú lịch sự kiện, công việc cá nhân.</td>
+<td>Xem</td>
+</tr>
+<tr>
+<td><strong>Báo cáo dẫn khách</strong></td>
+<td>Điền form mô tả sự việc sau khi dẫn khách đi xem BĐS <br><a href="coming_soon.md">Xem cách quản lý báo cáo dẫn khách</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Báo cáo tin đăng</strong></td>
+<td>mô tả <br><a href="coming_soon.md">Xem cách quản lý báo cáo tin đăng</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Hoạt động</strong></td>
+<td>Xem và quản lý các thao tác hoạt động của nhân viên trên nên tảng phần mềm.<br><a href="coming_soon.md">Xem cách quản lý hoạt động</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Vị trí</strong></td>
+<td>Cho phép người quản lý thu thập nhật ký định vị thiết bị của nhân viên khi đi thị trường và trong giờ làm việc. Tính năng này liên kết với nút switch <strong>Hạn chế vị trí truy cập</strong>.</td>
+<td>Xem Sửa</td>
+</tr>
+<tr>
+<td><strong>Giao dịch</strong></td>
+<td>Cho phép nhân viên cập nhật trạng thái giao dịch, mặc định là Chưa xác định, còn lại là: Chưa giao dịch, Đang giao dịch,vv <br><a href="coming_soon.md">Xem cách cập nhật giao dịch</a></td>
+<td>Xem Sửa</td>
+</tr>
+<tr>
+<td><strong>Văn bản nội bộ</strong></td>
+<td>mô tả</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+</tbody>
+</table>
+<h4 id="243-nhan-su">2.4.3 Nhân Sự</h4>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Gồm các quyền</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nhân viên</strong></td>
+<td>Quản lý nhân viên, tạo mới, chỉnh sửa, lưu hồ sơ, xoá, cập nhật hợp đồng,...</td>
+<td>Xem Tạo Sửa Xoá Xuất Nhập</td>
+</tr>
+<tr>
+<td><strong>Vị trí phòng ban</strong></td>
+<td>Cập nhật, tạo mới vị trí, chức vụ, phòng ban trong công ty.<br><a href="coming_soon.md">Xem cách quản lý Vị trí phòng ban</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Chi nhánh</strong></td>
+<td>Cập nhật, tạo mới thêm chi nhánh của công ty.<br><a href="coming_soon.md">Xem cách quản lý Vị trí phòng ban</a></td>
+<td>Xem</td>
+</tr>
+</tbody>
+</table>
+<h4 id="244-tuyen-dung">2.4.4 Tuyển Dụng</h4>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Gồm các quyền</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tuyển dụng</strong></td>
+<td>Lưu tin, tạo mẫu tuyển dụng</td>
+<td>Xem Tạo Sửa Xoá Xuất Nhập</td>
+</tr>
+<tr>
+<td><strong>Ứng viên</strong></td>
+<td>Lưu, cập nhật hồ sơ của ứng viên</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+</tbody>
+</table>
+<h4 id="243-he-thong">2.4.3 Hệ thống</h4>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Gồm các quyền</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cấp phép IP</strong></td>
+<td>Cập nhật địa chỉ IP, cho phép nhân viên hoạt động phần mềm trên địa chỉ đã cho phép, ví dụ như địa chỉ IP tại công ty. <br>Địa chỉ IP căn bản được cấu hình tối ưu cho địa chỉ IP tĩnh. Tuy nhiên, thông thường các nhà mạng ban đầu sẽ cấu hình địa chỉ IP động cho khách hàng. Quý khách cần lưu ý liên hệ với nhà mạng để đăng ký địa chỉ IP tĩnh để sử dụng phần mềm ổn định.<br><a href="coming_soon.md">Xem cách quản lý Cấp phép IP</a></td>
+<td>Xem Tạo Sửa Xoá Xuất Nhập</td>
+</tr>
+<tr>
+<td><strong>Cấp phép thiết bị</strong></td>
+<td>Mỗi thiết bị truy cập sẽ được gán 1 mã thiết bị và hệ thống ghi lại lịch sử truy cập của mã thiết bị này, và không thể thay đổi mã này. Người ở cấp quản lý có thể cho phép hoặc không cho phép thiết bị này truy cập và hoạt động trên phần mềm.</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Mẫu hợp đồng</strong></td>
+<td>Tạo và quản lý mẫu hợp đồng gửi khách.</td>
+<td>Xem</td>
+</tr>
+<tr>
+<td><strong>Thư mục data BĐS</strong></td>
+<td>Tạo và quản lý các loại danh mục BĐS để thao tác trên tính năng <strong>Thông tin BĐS</strong>, ví dụ như: loại BĐS, loại tài sản, ưu điểm, nhược điểm, loại đất, trạng thái, vai trò, tình trạng pháp lý...<br><a href="coming_soon.md">Xem cách quản lý Thư mục BĐS</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Dữ liệu đường</strong></td>
+<td>Cho phép cập nhật, thêm mới, sửa, xoá tên đường hiện có trên phần mềm.<br><a href="coming_soon.md">Xem cách quản lý Dữ liệu đường</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Khung giá đất</strong></td>
+<td>Nhân viên công ty được xem có khung giá được cập nhật mới nhất và thường xuyên từ nhà cung cấp phần mềm.</td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+<tr>
+<td><strong>Log thao tác</strong></td>
+<td>Lịch sử thao tác, hoạt động trên phần mềm của từng user trên hệ thống phần mềm.</td>
+<td>Xem Sửa</td>
+</tr>
+<tr>
+<td><strong>Thiết lập chung</strong></td>
+<td>Cập nhật chỉnh sửa 1 số thiết lập cấu hình chung cho công ty, ví dụ, bán kính truy cập theo vị trí, Cho phép cập nhật dữ liệu theo Tỉnh/Thành phố, Email CSKH, Địa chỉ công ty, Tên Công ty, Số Điện thoại. <br><a href="coming_soon.md">Xem cách Thiết lập chung</a></td>
+<td>Xem Sửa</td>
+</tr>
+<tr>
+<td><strong>Gói lưu trữ</strong></td>
+<td>Cho xem thông tin dung lượng lưu trữ trên hệ thống phần mềm. Các loại thông tin được lưu trữ: Tài liệu (PDF), Hình ảnh/Video về nhà, bđs,... <br><a href="coming_soon.md">Xem cách theo dõi dung lượng lưu trữ</a></td>
+<td>Xem Tạo Sửa Xoá</td>
+</tr>
+</tbody>
+</table>
+<details class="note">
+<summary>Định nghĩa từ thường dùng: IP tĩnh vs IP động</summary>
+<p>Trong môi trường Internet, mỗi khi đăng ký gói cước truy cập Internet từ các nhà mạng, họ sẽ cung cấp địa chỉ <strong>IP động</strong> cho khách hàng.
+  <br>ví dụ về địa chỉ IP: 172.15.24.32
+  <br>IP Động là gì, tại sao?
+  <br>- con số địa chỉ IP trên sẽ <strong>tự động thay đổi</strong> theo từng chu kỳ của mỗi nhà mạng, có thể 1 ngày, 2 ngày, hoặc 7 ngày. Việc thay đổi này do hệ thống quản lý IP nhà mạng tự động đổi để làm mới trạng thái truy cập và bảo mật thông tin IP hơn để không phải bị theo dõi thường xuyên.
+  <br>
+  <br>IP Tĩnh là gì, tại sao?
+  <br>- con số địa chỉ IP trên sẽ <strong>không tự động thay đổi</strong> theo theo chu kỳ cho đến khi thông báo thay đổi với nhà mạng. Việc này đòi hỏi tính bảo mật cao hơn và quản lý nhiều hơn, do đó khách hàng phải trả phí quản lý này để nhà mạng duy trì.</p>
+</details>
+<h3 id="25-an-dashboard-thong-ke">2.5 Ẩn Dashboard thống kê</h3>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Trạng thái mặc định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hoạt động nhân viên</strong></td>
+<td>Thống kê các hoạt động, số lượng, thời gian của nhân viên trên phần mềm.</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Số lượng thông tin</strong></td>
+<td>Thống kê và phân loại số lượng thông tin đã nhập trên phần mềm.</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Lượt xem thông tin</strong></td>
+<td>Thống kê số lượt xem thông tin theo tiêu chí địa điểm (quận, huyện, thành phố), loại bđs, loại giá, bán/thuê...</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Trạng thái nhà</strong></td>
+<td>Thống kê số lượng thông tin dựa theo trạng thái nhà: chủ nhà cũ, hiện tại, chưa giao dịch, đã giao dịch...</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Thống kê quận huyện</strong></td>
+<td>Thống kê thông tin theo tiêu chí phân bố quận huyện (TPHCM)</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Trạng thái giao dịch</strong></td>
+<td>Thống kê các trạng thái giao dịch.</td>
+<td>Chưa bật</td>
+</tr>
+</tbody>
+</table>
+<h5 id="cach-thao-tac">Cách thao tác</h5>
+<div class="admonition note">
+<p class="admonition-title">Nút bấm thao tác chọn</p>
+<p>Xem 2 hình bên dưới.
+  <br> <em>Hình bên trái:</em> Đối với loại nút <strong>bấm viền tròn</strong> trên hệ thống phần mềm, loại nút này mặc định khi có màu xám có nghĩa là <strong>chưa kích hoạt</strong> tính năng.
+  <br> <em>Hình bên phải:</em> Khi nút bấm này được click, sẽ chuyển màu cam/hoặc màu chủ đạo của công ty (xanh lá, xanh lam, đỏ,...) thì có nghĩa là chức năng này <strong>được kích hoạt</strong>.
+  <br> Chức năng của nút này tương tự như <strong>nút Switch</strong>.
+  <br> Quý khách có thể gặp nút bấm này trên các bộ lọc thông tin BĐS, quản lý nhân viên, cấp quyền nhân viên,...</p>
+</div>
+<div class="grid cards">
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_andashboard_1.png" data-type="image" data-width="100%" data-height="auto" data-title="Tắt: Đồng nghĩa vẫn hiện thị" data-desc-position="bottom"><img alt="Tắt: Đồng nghĩa vẫn hiện thị" src="../../assets/images/modules/nhanvien/nhanvien_tab2_andashboard_1.png" /></a>
+   <a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_andashboard_2.png" data-type="image" data-width="100%" data-height="auto" data-title="Bật: Đồng nghĩa đang ẩn hiển thị" data-desc-position="bottom"><img alt="Bật: Đồng nghĩa đang ẩn hiển thị" src="../../assets/images/modules/nhanvien/nhanvien_tab2_andashboard_2.png" /></a></p>
+</div>
+<h3 id="26-quan-ly-nhan-vien-chi-nhanh">2.6 Quản lý nhân viên chi nhánh</h3>
+<p>Thiết lập cấu hình để nhân viên mới này có thể thấy các hoạt động của những nhân viên khác cùng chi nhánh, hoặc tất cả chi nhánh.</p>
+<h3 id="27-xem-du-lieu">2.7 Xem Dữ liệu</h3>
+<p>Đây là phần quan trọng, đơn vị phần mềm có tham khảo và đã thiết lập sẵn 1 số cấu hình trong tính năng này. Quý khách hàng lưu ý và tuỳ chỉnh tuỳ theo nhu cầu và policy của công ty.</p>
+<h4 id="271-gioi-han-ngay-thang">2.7.1 Giới hạn ngày tháng</h4>
+<p>Sau đây là hình Giao diện cho xem thông tin BĐS theo khoảng ngày tháng. Từ ngày/tháng/năm (đánh dấu <strong>số 1</strong> trên hình) -&gt; Đên ngày/tháng/năm (đánh dấu <strong>số 2</strong> trên hình).</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_limitdate.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_limitdate.png" /></a></p>
+<p><span>• Nếu <strong>trường số 1</strong> để trống, mặc định là không giới hạn, hiển thị tất cả thông tin BĐS trước ngày cấu hình trên <strong>trường số 2</strong>.</span>
+<br><span>• Nếu <strong>trường số 2</strong> để trống, mặc định là ngày hiện tại (hôm nay).</span></p>
+<h4 id="272-loai-giao-dich-uoc-xem">2.7.2 Loại giao dịch được xem</h4>
+<p>Sau đây là hình Giao diện cho xem loại giao dịch BĐS theo khoảng ngày tháng.<br>• Cho xem tất cả (đánh dấu <strong>số 1</strong> trên hình).
+<br>• Cho xem giao dịch Bán (đánh dấu <strong>số 2</strong> trên hình).
+<br>• Cho xem giao dịch Thuê (đánh dấu <strong>số 3</strong> trên hình).</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_loaigiaodich.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_loaigiaodich.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">Nút radio</p>
+<p>Như hình trên thể hiện loại nút radio, dùng để bật tắt tính năng, có giao diện là 1 ô tròn.
+  <br>• ở trạng thái mặc định có màu xám, có nghĩa là chưa kích hoạt.
+  <br>• khi click vào, nút chuyển màu (đỏ, xanh hoặc màu chủ đạo trên phần mềm) có nghĩa là đã kích hoạt.</p>
+</div>
+<h4 id="273-gioi-han-luot-xem-moi-ngay">2.7.3 Giới hạn lượt xem mỗi ngày</h4>
+<p>Sau đây là hình Giao diện cấu hình lượt xem thông tin BĐS trong 1 ngày, theo các tiêu chí sau:</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_luotxem.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_luotxem.png" /></a>
+<br>• Lượt xem thông tin (đánh dấu <strong>số 1</strong> trên hình).
+<br>• Lượt xem số điện thoại (click để hiện số điện thoại khi xem thông tin BĐS) (đánh dấu <strong>số 2</strong> trên hình).
+<br>• Giới hạn số lượt xem Số Điện thoại chênh lệch, nghĩa là 1 khoảng lượt được xem thêm khi vượt quá, trường này cho phép user/nhân viên xem thêm số lượt được cấu hình ở đây. Ví dụ: Nếu số lượt xem Số điện thoại là 20, và trường này cấu hình lượt xem chênh lệch là 5, tổng số lượt xem là 25 mỗi ngày. (đánh dấu <strong>số 3</strong> trên hình).</p>
+<h4 id="274-gioi-han-phan-khuc-gia">2.7.4 Giới hạn Phân khúc giá</h4>
+<p>Sau đây là hình Giao diện cấu hình phân khúc, khoảng giá bán và khoảng giá thuê, cụ thể theo các tiêu chí sau:</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_phankhucgia.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_limit_phankhucgia.png" /></a>
+<br>• Giới hạn cho nhân viên xem thông tin BĐS trong khoảng giá (phân khúc giá) bán: (đánh dấu <strong>số 1</strong> và <strong>số 2</strong>), nhập số thấp nhất (trường số 1) và cao nhất (trường số 2) trong khoảng giá mong muốn.
+<br>• Giới hạn cho nhân viên xem thông tin BĐS trong khoảng giá (phân khúc giá) thuê: (đánh dấu <strong>số 3</strong> và <strong>số 4</strong>), nhập số thấp nhất (trường số 13) và cao nhất (trường số 4) trong khoảng giá mong muốn.
+<br>• Nếu Quý khách muốn điền phân khúc giá thuê với đơn vị là USD, bấm vào nút <strong>số 5</strong>. Sẽ hiện theo hình dưới đây.</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_loaigiaodich_usd.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_loaigiaodich_usd.png" /></a></p>
+<h4 id="275-tatmo-xem-hinhlich-suso-ien-thoai">2.7.5 Tắt/Mở Xem hình/Lịch Sử/Số Điện Thoại</h4>
+<p>Sau đây là hình Giao diện tăt/mở cho phép xem hình, số nhà, lịch sử, người cập nhật cụ thể theo các tiêu chí sau:
+<a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_xemhinh_lichsu.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_xemhinh_lichsu.png" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Tên trường</th>
+<th>Mô tả</th>
+<th>Trạng thái mặc định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Xem số nhà</strong></td>
+<td>Cho xem đầy đủ số nhà</td>
+<td>Chưa bật</td>
+</tr>
+<tr>
+<td><strong>Xem hình/video nhà</strong></td>
+<td>Cho xem hình và video thông tin sản phẩm BĐS đã cập nhật trên phần mềm</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem hình sổ</strong></td>
+<td>Cho xem hình các loại sổ nhà đất, như sổ hồng.</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem người cập nhật</strong></td>
+<td>Hiển thị tên và hình người cập nhật trên sản phẩm thông tin BĐS</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem số điện thoại</strong></td>
+<td>Cho phép xem số điện thoại liên hệ. Tính năng này liên kết với <strong>Giới hạn lượt xem mỗi ngày</strong> đã đề cập ở bên trên.</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem lịch sử tương tác</strong></td>
+<td>Cho xem lịch sử tương tác</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem lịch sử cập nhật</strong></td>
+<td>Cho xem lịch sử nhân viên và ngày tháng, giờ cập nhật.</td>
+<td>Mở</td>
+</tr>
+<tr>
+<td><strong>Xem lịch sử dẫn khách</strong></td>
+<td>Cho xem lịch sử dẫn khách, tính năng này liên kết với tính năng <a href="coming_soon.md">Báo cáo dẫn khách</a></td>
+<td>Mở</td>
+</tr>
+</tbody>
+</table>
+<h4 id="276-quan-huyen-trang-thai-bs-khong-uoc-xem">2.7.6 Quận Huyện &amp; Trạng thái BĐS Không được xem</h4>
+<p>Sau đây là hình Giao diện tăt/mở cho phép xem hình, số nhà, lịch sử, người cập nhật cụ thể theo các tiêu chí sau:
+<a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_noxem_1.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_noxem_1.png" /></a></p>
+<p>Với Giao diện hiện tại, Quý khách vui lòng bấm vào <em>vùng chữ</em> hoặc <em>dấu mũi tên xuống</em>. Ví dụ <strong>Quận/Huyện không được xem</strong>, click vào để hiện giao diện chọn (nhiều) các danh mục/lựa chọn theo mong muốn của quý khách.</p>
+<p><a class="glightbox" href="../../assets/images/modules/nhanvien/nhanvien_tab2_noxem_2.png" data-type="image" data-width="100%" data-height="auto" data-title="Giao diện cho xem thông tin BĐS theo ngày tháng" data-desc-position="bottom"><img alt="Giao diện cho xem thông tin BĐS theo ngày tháng" src="../../assets/images/modules/nhanvien/nhanvien_tab2_noxem_2.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Nút thao tác chọn</p>
+<p>Như đã giới thiệu ở trên, Nút Thao tác chọn cho phép chọn nhiều danh mục/option cùng lúc.</p>
+</div>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Sau khi đã chọn lựa và cấu hình các thiết lập cần thiết cho đối tượng nhân viên mới này, Quý khách có thể bấm <strong>nút Lưu</strong>. Hệ thống sau đó sẽ tự động gửi link và thông tin kích hoạt đến email của nhân viên đã nhập trước đó trong <em>tab Thông tin</em>.</p>
+</div>
+<hr />
+<h3 id="2-buoc-tiep-theo-e-hoan-tat-qua-trinh-tao-nhan-vien">2. Bước tiếp theo để hoàn tất quá trình tạo Nhân viên</h3>
+<div class="grid cards">
+<ul>
+<li>Bước 3<p>Hướng dẫn Kích hoạt Nhân viên</p>
+    → <a href="nhanvien_tao_b3.html">Xem hướng dẫn</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      TekaDev &copy; 2025 - TekaDev - Phần mềm Quản lý Bất động sản.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "navigation.sections", "navigation.tracking", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../extra_javascript/normalize.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
