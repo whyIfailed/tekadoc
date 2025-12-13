@@ -1,7 +1,10 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
 :root {
   /* Define a custom primary foreground color for the top bar */
   --md-primary-fg-color: hsla(12, 100%, 61%, 1);
 }
+
 
 @media (min-width:1024px){
    .md-container {
@@ -140,11 +143,17 @@ th, td {
    margin-top:0;
    margin-bottom:0;
 }
-
+article hr {
+   display: none !important;
+   width: 0;
+   height: 0;
+   visibility: hidden;
+   opacity: 0;
+}
 .md-nav__title {
    padding-bottom: 12px;
    margin-bottom: 24px;
-   font-size: .8rem;
+   font-size: .7rem;
    font-weight: bold;
    line-height: 1.5;
    border-bottom: 1px solid #eee;
@@ -179,4 +188,82 @@ details.note {
 }
 details.note summary {
    height: 100%;
+}
+
+footer .md-copyright {
+   width: 100%;
+}
+article table tr td:first-child{
+   width: 20%;
+}
+
+@media (min-width: 320px) {
+footer .md-copyright .footer-contact {
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   gap: 8px;
+   padding: 12px 0;
+}
+
+footer .footer-logo {
+
+}
+
+footer .footer-logo a {
+display:  inline-block;
+margin-bottom: 4px;
+}
+
+footer .footer-logo img {
+   width: 128px;
+   border: none;
+   border-radius: 0;
+}
+
+.md-copyright__highlight p {
+   margin: 8px 0;
+}
+}
+
+@media (min-width: 768px) {
+footer .md-copyright .footer-contact {
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   align-items: end;
+   gap: 8px;
+   padding: 12px 0;
+}
+
+}
+
+.footer-contact a {
+   display: block;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.footer-contact a i {
+   margin-right: 12px;
+}
+
+.footer-contact a:first-child {
+   color: orangered !important;
+}
+
+@media (min-width: 320px) {
+ footer .md-copyright {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   flex-direction: column;
+   padding: 12px 0;
+}  
+}
+
+@media (min-width: 768px) {
+footer .md-copyright {
+   flex-direction: row;
+}
 }
